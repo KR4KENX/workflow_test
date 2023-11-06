@@ -14,5 +14,5 @@ jobs:
         with:
           node-version: '18'
       - uses: actions/setup-python@v4
-      - run: python3
+      - run: python3 main.py
   
