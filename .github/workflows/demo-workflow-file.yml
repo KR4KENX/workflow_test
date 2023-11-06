@@ -10,7 +10,8 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Install pytest
-      - run: pip install -U pytest
+        run: pip install -U pytest
+      - name: run app
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
