@@ -1,5 +1,5 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: my first pipeline
+run-name: ${{ github.actor }} CI/CD
 on:
   push:
     branches:
@@ -15,6 +15,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: pip install -U pytest
@@ -22,6 +23,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
       - run: python3 main.py
       
       
