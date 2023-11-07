@@ -1,4 +1,4 @@
 print("hello")
 
-def test(a):
+def test():
     print("test")
