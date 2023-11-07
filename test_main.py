@@ -1,4 +1,4 @@
 from main import *
 
 def test_main():
-    assert test('super') == 'test'
+    assert test() == 'test'
