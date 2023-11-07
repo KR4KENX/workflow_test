@@ -1,6 +1,4 @@
-def func(x):
-    return x + 1
+from main import *
 
-
-def test_answer():
+def test_main():
     assert func(3) == 5
